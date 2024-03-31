@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'StudyAlone';
+    src: url(../file_2/fonts/StudyAlone.otf);
+}
+:root{
+    --oxford-blue: #0a1128ff;
+    --penn-blue: #001f54ff;
+    --indigo-dye: #034078ff;
+    --cerulean: #1282a2ff;
+    --white: #fefcfbff;
+}
+
+
+body{
+    background-color: var(--indigo-dye);
+    color: var(--cerulean);
+    font-family: 'StudyAlone', cursive, sans-serif;
+    text-align: justify;
+}
+h1, h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    color: red;
+}
+h1.título_1{
+    color: var(--oxford-blue);
+    text-align: end;
+}
+h1#principal{
+    text-align: center;
+    color: var(--white);
+    background-color: var(--penn-blue);
+    padding: 20px;
+}
+h2.básico{
+    color: rgb(0, 225, 0);
+}
+h2.intermediário{
+    color: rgb(255, 255, 0);
+}
+h2.avançado{
+    color: #c60000;
+}
+.destaque{
+    background-color: rgba(236, 236, 42, 0.545);
+}

@@ -1,0 +1,18 @@
+video{
+    border-width: 10px;
+    border-style: solid;
+    border-color: blue;
+    width: 600px;
+}
+body{
+    background-color: cadetblue;
+}
+h1{
+    color: blue;
+}
+p{
+    color: aquamarine;
+}
+div{
+    text-align: center;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color1: #2364aaff;
+    --color2: #3da5d9ff;
+    --color3: rgb(176, 210, 255);
+    --color4: #0f084bff;
+    --color5: #c0e5ffff;
+}
+body{
+    background-color: var(--color5);
+    font-family: 'Play', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: var(--color1);
+    padding: 1px;
+}
+header > p{
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+}
+nav > a:hover{
+    color: rgb(200, 200, 200);
+}
+nav > a:active{
+    color: rgb(115, 115, 115);
+}
+h1{
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+main{
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    padding: 0.1px 0px;
+}
+main > h2{
+    background-image: linear-gradient(to right, rgba(192, 229, 255, 0.74)10%, rgba(35, 100, 170, 0.01));
+    padding: 3px 7px;
+    border-radius: 0px 10px;
+    margin: 16px 10px;
+}
+main > h2#inverter{
+    background-image: linear-gradient(to left, rgba(192, 229, 255, 0.74)10%, rgba(35, 100, 170, 0.01));
+    text-align: end;
+    border-radius: 10px 0px;
+}
+main > h2#espacamento{
+    margin-top: 10px;
+}
+p{
+    margin: 16px 5px;
+}
+section.comeco{
+    display: flex;
+    flex-direction: column;
+}
+section.comeco > p{
+    margin: 8px 5px;
+}
+section > p{
+    text-indent: 20px;
+    text-align: justify;
+}
+aside#video{
+    background-color: var(--color1);
+    padding: 15px;
+    text-align: center;
+}
+iframe{
+    width: 60vw;
+}
+
+footer{
+    background-color: var(--color4);
+    color: white;
+    padding: 1px;
+}
+footer > p{
+    margin: 5px;
+    text-align: center;
+}
+footer > p > a{
+    color: red;
+    text-decoration: none;
+}
+footer > p > a:active{
+    color: rgb(0, 0, 255);
+    text-decoration: underline;
+}

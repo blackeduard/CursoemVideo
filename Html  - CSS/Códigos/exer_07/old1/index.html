@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com links</title>
+  </head>
+  <body>
+    <h1 align="center">Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito do youtube</a></p>
+    <hr>
+    Ao usarmos a tag <strong><em>&lt;a&gt;</em></strong> temos atributos em torno dela como <em><strong>href</strong>, <strong>target</strong>, <strong>rel</strong>,<strong> hreflang</strong></em>,<strong><em>download</em></strong> e <em><strong>type</strong></em>. 
+    <br>
+    Quando utilizar os temos atributos temos valores denominados a eles como:
+    <dl>
+        <ol>
+          <li><dt>Para o atributo <strong>href</strong></dt></li>
+          <dd>Onde colocamos o link do site que vai ser indexado</dd>
+          <br>
+          <li><dt>Para o atributo <strong>hreflang</strong></dt></li>
+          <dd>Onde decidiremos a tradução da página</dd>
+          <br>
+          <li><dt>Para o atributo <strong>target</strong></dt></li>
+          <dd>
+              <strong>_blank</strong> - vai abrir em outra página o hiperlink <br>
+              <strong>_self</strong> - vai abrir na mesma página o hiperlink <br>
+              Normalmente usamos mais os valores <strong>_blank</strong> e <strong>_self</strong>
+          </dd>
+          <br>
+          <li><dt>Para o atributo <strong>rel</strong></dt></li>
+          <dd>
+              Podemos indicar qual é a natureza do hiperlink que clicamos: <br>
+              <strong>next</strong> - indicará que o link é para próxima parte do link atual <br>
+              <strong>prev</strong> - indica que o link é para parte anterior do link atual <br>
+              <strong>author</strong> - indica que é um link para o site do autor <br>
+              <strong>external</strong> - indica que é um link que não faz parte desse site <br>
+              <strong>nofollow</strong> - indica que é um link pago
+          </dd>
+          <br>
+          <li><dt>Para o atributo <strong>download</strong></dt></li>
+          <dd>
+            Bom parece bem simples não? Para o atributo download faremos com que baixermos o link ou arquivo.
+          </dd>
+          <br>
+          <li><dt>Para o atributo <strong>type</strong></dt></li>
+          <dd>
+            Para complementarmos o atributo <strong>download</strong> faremos com que o <strong>type</strong> o complemente.
+            Os valores estão no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" rel="external" target="_blank">IANA.org</a>.
+          </dd>
+          </dd>
+        </ol>
+    </dl>
+  </body>
+</html>

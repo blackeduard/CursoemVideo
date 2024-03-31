@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{
+    --tea-rose-red: #e2c2c6ff;
+    --rosy-brown: #b9929fff;
+    --plum: #9c528bff;
+    --indigo: #610f7fff;
+    --russian-violet: #2f0147ff;
+}
+body{
+    background-image: linear-gradient(to left, var(--tea-rose-red), var(--rosy-brown));
+    color: var(--plum);
+}
+h1,h2{
+    color: var(--russian-violet);
+    text-align: center;
+    font-size: 2em;
+}
+p{
+    font-family: 'Pacifico';
+}
+h1{
+    font-size: 3em;
+}
+div.pocket{
+    background-image: linear-gradient(to right, var(--russian-violet), var(--rosy-brown));
+    border-radius: 10px;
+
+}
+div.pocket_in_pocket{
+    padding: 10px;
+}

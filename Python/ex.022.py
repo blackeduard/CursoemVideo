@@ -1,0 +1,45 @@
+from time import sleep
+num=int(input('Informe o número: '))
+print('Analisando o número \033[1;34m{}\033[m'.format(num))
+n=str(num)
+if num >= 100000:
+    print('\033[1;31mTem Mobral?\033[m')
+    sleep(3)
+    print('Esse programa suporta apenas casas de milhar para baixo')
+    sleep(4)
+    print('Não vá brincando mais assim.')
+    sleep(3)
+    print('\033[1;31mREINICIE\033[m')
+elif num >= 10000:
+    print('Reinicie o programa, \033[1;31meste número não se encontra.\033[m')
+elif num == 9999:
+    print('É \033[1;31msério mesmo\033[m que você quis testar o meu limite?')
+    sleep(3)
+    print('\033[1;34mOkay então não sei se isso foi uma piada ou um trocadilho...\033[m')
+    sleep(4)
+    print('Mais está aí suas respectivas casas decimais')
+    sleep(3)
+    print('Unidade: {}'.format(n[3]))
+    print('Dezena: {}'.format(n[2]))
+    print('Centena: {}'.format(n[1]))
+    print('Milhar: {}'.format(n[0]))
+elif num >= 1000:
+    print('Unidade: {}'.format(n[3]))
+    print('Dezena: {}'.format(n[2]))
+    print('Centena: {}'.format(n[1]))
+    print('Milhar: {}'.format(n[0]))
+elif num >= 100:
+    print('Unidade: {}'.format(n[2]))
+    print('Dezena: {}'.format(n[1]))
+    print('Centena: {}'.format(n[0]))
+    print('Este número não tem um Milhar.')
+elif num >= 10:
+    print('Unidade: {}'.format(n[1]))
+    print('Dezena: {}'.format(n[0]))
+    print('Este número não tem uma Centena.')
+    print('Este número não tem um Milhar.')
+elif num >= 0:
+    print('Unidade: {}'.format(n[0]))
+    print('Este número não tem uma Dezena.')
+    print('Este número não tem uma Centena.')
+    print('Este número não tem um Milhar.')

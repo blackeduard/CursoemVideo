@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulario</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1" width="370">
+            <td>
+                <div>
+                    <p>
+                        <label for="nome">Nome: </label><input type="text" id="nome" name="user_nome">
+                        <br>
+                        <label for="idade">Idade: </label><input type="number" id="idade" name="user_idade">
+                        <br>
+                        <label for="tel">Telefone: (31)</label><input type="tel" id="telefone" name="user_tel">
+                        <br>
+                        <label for="escola">Escola: </label><input type="text"
+                        id="escola" name="user_esco">
+                        <br>
+                        <label for="nome">Responsável: </label><input type="text"
+                        id="resp" name="user_resp">
+                    <ol>
+                        <li>Utiliza redes sociais?</li>
+                        <input type="radio" name="option" id="1"><label for="resp1">Sim</label>
+                        <input type="radio" name="option" id="2"><label for="resp2">Não</label>
+                        <li>Quais?</li>
+                        <input type="checkbox" name="opt0" id="">
+                        <label for="res1">Instagram</label>
+                        <input type="checkbox" name="opt1" id="">
+                        <label for="res2">Tiktok</label>
+                        <input type="checkbox" name="opt2" id="">
+                        <label for="res3">Twitter</label>
+                        <input type="checkbox" name="opt3" id="">
+                        <label for="res4">Outra</label>
+                        <li>Consegue ficar 24 horas sem utilizar?</li>
+                        <input type="radio" name="option.1">
+                        <label for="resp2.1">Sim</label>
+                        <input type="radio" name="option.1">
+                        <label for="resp2.2">Não</label>
+                    </ol>
+                        <label for="data">Data: </label><input type="date" name="date" id="daytime">
+                    </ol>
+                    </p>
+                </div>
+                <div style="text-align: end;"><input type="submit" value="Enviar Formulário"></div>
+            </td>
+        </table>
+    </form>
+</body>
+</html>

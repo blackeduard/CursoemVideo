@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Coffee';
+    src: url(fonts/Louis\ George\ Cafe\ Light\ Italic.ttf) format(truetype);
+    src: url(fonts/Louis\ George\ Cafe\ Light.ttf) format(truetype);
+    src: url(fonts/Louis\ George\ Cafe\ Italic.ttf) format(truetype);
+    src: url(fonts/Louis\ George\ Cafe\ Bold\ Italic.ttf) format(truetype);
+    src: url(fonts/Louis\ George\ Cafe\ Bold.ttf) format(truetype);
+    src: url(fonts/Louis\ George\ Cafe.ttf) format(truetype);
+}
+:root{
+    --color1: #CE2D4F;
+    --color2: #D2C2A8;
+    --color3: #9A7668;
+    --color4: #9C7566;
+    --color5: #2D1C12;
+}
+body{
+    background-color: var(--color2);
+    font-family: 'Coffee', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: var(--color5);
+    padding: 0.1px;
+}
+h1{
+    font-size: 5em;
+    padding: 40px;
+}
+p{
+    color: var(--color1);
+    font-weight: lighter;
+    padding: 40px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 25px 30px;
+    justify-content: space-between;
+}
+a.option{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 500px;
+    transition-duration: 1s;
+}
+a.option:hover{
+    background-color: var(--color3);
+}
+/* ? Conteúdo do Site */
+article{
+    background-color: var(--color3);
+}
+aside{
+    background-color: var(--color2);
+}
+aside.coffees{
+    background-color: var(--color3);
+    text-align: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+img.coffees{
+    margin: 20px;
+}
+/* ! Rodapé do site */
+p.ref{
+    color: white;
+    font-weight: bold;
+    display: inline;
+    padding: 10px;
+    text-indent: 0px;
+}
+img.web{
+    margin: auto;
+    padding: 10px;
+    display: inline;
+    width: 25px;
+    height: 25px;
+}
+footer{
+    background-color: var(--color3);
+    padding: 10px;
+}

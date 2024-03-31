@@ -1,0 +1,90 @@
+:root{
+    --color1: #ffdda1ff;
+    --color2: #ffd151ff;
+    --color3: #f8c537ff;
+    --color4: #edb230ff;
+    --color5: #e77728ff;
+    /*  */
+    --color6: #e8f1f2ff;
+    --color7: #1b98e0ff;
+    --color8: #247ba0ff;
+    --color9: #006494ff;
+    --color0: #13293dff;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+}
+h1::after{
+    content: ' --';
+}
+h1::before{
+    content: '-- ';
+}
+/* ! Voltar */
+div{
+    width: 80px;
+    background-color: lightgrey;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50%;
+    text-align: center;
+}
+div:hover{
+    background-color: rgb(150, 150, 150);
+}
+div:active{
+    background-color: grey;
+}
+div > a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 4em;
+    color: black;
+}
+/* ? 1° Navegador */
+nav#first_nav{
+    background-color: var(--color5);
+    padding: 10px;
+}
+nav#first_nav > ul{
+    list-style: none;
+}
+nav#first_nav > ul > li {
+    display: inline;
+    padding: 20px;
+}
+nav#first_nav > ul > li > a{
+    text-decoration: none;
+    color: var(--color1);
+}
+nav#first_nav > ul > li > a:hover{
+    color: var(--color2);
+}
+nav#first_nav > ul > li > a:active{
+    color: var(--color4);
+}
+/* ? 2° Navegador */
+nav#second_nav{
+    background-color: var(--color0);
+    padding: 10px;
+}
+nav#second_nav > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav#second_nav > ul > li > a{
+    text-decoration: none;
+    color: var(--color6);
+}
+nav#second_nav > ul > li > a:hover{
+    color: var(--color7);
+}
+nav#second_nav > ul > li > a:active{
+    color: var(--color9);
+}

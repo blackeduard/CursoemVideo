@@ -1,0 +1,15 @@
+tab=int(input('Digite um número para ver sua tabuada: '))
+print('\033[1;36;41m-=-\033[m'*5)
+print('\033[41m{} x 1 = {}      \033[m'.format(tab,tab*1))
+print('\033[41m{} x 2 = {}     \033[m'.format(tab,tab*2))
+print('\033[41m{} x 3 = {}     \033[m'.format(tab,tab*3))
+print('\033[41m{} x 4 = {}     \033[m'.format(tab,tab*4))
+print('\033[41m{} x 5 = {}     \033[m'.format(tab,tab*5))
+print('\033[41m{} x 6 = {}     \033[m'.format(tab,tab*6))
+print('\033[41m{} x 7 = {}     \033[m'.format(tab,tab*7))
+print('\033[41m{} x 8 = {}     \033[m'.format(tab,tab*8))
+print('\033[41m{} x 9 = {}     \033[m'.format(tab,tab*9))
+print('\033[41m{} x 10 = {}    \033[m'.format(tab,tab*10))
+print('\033[1;36;41m-=-\033[m'*5)
+
+

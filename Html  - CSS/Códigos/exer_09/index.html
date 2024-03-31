@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício n°9</title>
+    <link rel="shortcut icon" href="../../Desafios/desafio_1/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Vemos uma imagem dinâmica</p>
+    <picture>
+        <source media="(max-width: 500px) " srcset="imagens/exemplos_do_video/imagem_p.png">
+        <source media="(max-width: 800px) " srcset="imagens/exemplos_do_video/imagem_m.png">
+        <img src="imagens/exemplos_do_video/imagem_g.png" alt="">
+    </picture>
+    <hr>
+    <h1>Exemplo de imagem dinâmica</h1>
+    Imagens cropadas podem também podem ser feitas<br>
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens/imgs1/img-p.jpg" type="image/jpg">
+        <source media="(max-width: 800px)" srcset="imagens/imgs1/img-m.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="imagens/imgs1/img-g.jpg" type="image/jpg">
+        <img src="imagens/imgs1/img-gg.jpg" alt="">
+    </picture>
+</body>
+</html>

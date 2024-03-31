@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* Título */
+h1{
+    font-size: 3em;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+}
+/* * Navegador */
+nav{
+    background-color: black;
+    width: 45px;
+    padding: 5px;
+    margin-left: 15px;
+    transition: 1.4s;
+    border-radius: 10px 0px 0px 10px;
+
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+}
+nav:hover{
+    width: 230px;
+    transition: 2s;
+}
+ul{
+    list-style: none;
+}
+ul li.item_menu{
+    display: flex;
+}
+ul > li a{
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 2px 10px;
+    color: white;
+}
+a.txt:hover{
+    color: lightgrey;
+}
+a.txt:active{
+    color: grey;
+}
+span.img_selec{
+    cursor: pointer;
+}

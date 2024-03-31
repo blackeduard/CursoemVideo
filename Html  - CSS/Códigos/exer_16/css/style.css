@@ -1,0 +1,146 @@
+:root{
+    --color1: #D9325E;
+    --color2: #D9C6B0;
+    --color4: #8C6C61;
+    --color5: #C49A6C;
+    --color3: #26170F;
+}
+@font-face {
+    font-family: 'Coffee';
+    src:
+        url(../font/Louis_George_Cafe.ttf) format("truetype"),
+        url(../font/Louis_George_Bold_Italic.ttf) format("truetype"),
+        url(../font/Louis_George_Cafe_Bold.ttf) format("truetype"),
+        url(../font/Louis_George_Cafe_Italic.ttf) format("truetype"),
+        url(../font/Louis_George_Cafe_Light.ttf) format("truetype"),
+        url(../font/Louis_George_Cafe_Light_Italic.ttf) format("truetype");
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Coffee';
+    text-decoration: none;
+}
+body{
+    background-image: url(../img/background.png);
+}
+
+/* Cabeçalho Site */
+
+header{
+    padding: 20px;
+    background-color: var(--color3);
+}
+header > nav{
+    padding: 10px 0px;
+}
+header a,h1{
+    color: white;
+    padding: 2px 10px;
+    transition: 1.5s;
+}
+header a:hover{
+    background-color: var(--color4);
+    padding: 2px 10px;
+    border-radius: 50px;
+    transition: 1s;
+}
+header a:active{
+    transition: 0s;
+    background-color: #614b45;
+}
+header h1{
+    font-size: 3em;
+}
+header p{
+    color: var(--color1);
+    text-align: end;
+}
+header div.header_text{
+    display: flex;
+}
+header div.h1_header_text{
+    flex: 1 1 40%;
+}
+header div.p_header_text{
+    flex: 0px;
+    font-size: 0.77em;
+}
+nav{
+    margin-bottom: 15px;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/*  Meio do Site*/
+
+main {
+    background-color: var(--color2);
+    width: 80vw;
+    margin: auto;
+}
+div#main_img{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+}
+div#main_img > img{
+    width: 150px;
+    height: 150px;
+    background-color: var(--color2);
+    padding: 5px;
+}
+h2.h2_main_text{
+    color: var(--color1);
+    font-weight: 600;
+}
+p.number_main_text{
+    color: var(--color1);
+    font-weight: 600;
+}
+div.main_video{
+    padding: 0px 2px ;
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+}
+main > div.main_video h2{
+    font-size: 3.5em;
+}
+main > div.main_video p{
+    font-size: 4em;
+}
+div#main_history{
+    background-image: linear-gradient(to bottom, var(--color2), var(--color4)40%);
+    color: white;
+    padding: 20px 30px;
+}
+div#main_history p{
+    padding-top: 10px;
+}
+div#main_history > p#credit{
+    text-align: end;
+}
+
+/* Rodapé do Site */
+
+footer{
+    background-color: var(--color3);
+    padding: 5px;
+}
+footer > p{
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgb(200, 200, 200);
+}
+footer a:active{
+    color: grey;
+}

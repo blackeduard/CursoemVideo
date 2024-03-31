@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf);
+}
+@font-face {
+    font-family: 'Tecnology';
+    src: url(fontes/Tecnology.otf);
+}
+:root{
+    --color1: #C5EBD6;
+    --color2: #83E1AD;
+    --color3: #3DDC84;
+    --color4: #2FA866;
+    --color5: #1A5C37;
+    --color6: #063D1E;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--color2);
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ! Cabeçalho do Site */
+header{
+    background-image: linear-gradient(to bottom, var(--color3), var(--color5)70%);
+    padding: 0.1px;
+}
+header > h1{
+    margin: 15px;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header > p{
+    color: rgb(255, 255, 255);
+    font-family: 'Work Sans';
+    font-weight: 300;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    text-indent: 0px;
+}
+header > nav > ul{
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+li > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Work Sans';
+    font-weight: 400;
+}
+li > a:hover{
+    color: rgb(200, 200, 200);
+}
+li > a:active{
+    color: rgb(150, 150, 150);
+}
+
+/* ? Corpo do Site */
+main{
+    background-color: white;
+    padding: 1px;
+    padding-bottom: 0.01px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    width: 80vw;
+}
+main > section{
+    text-align: justify;
+}
+main > section > article > p > strong, strong#esp{
+    color: #1a5c37;
+    text-shadow: 0px 0px 1.2px rgba(0, 0, 0, 0.699);
+}
+h2{
+    text-align: center;
+}
+section{
+    padding: 0px 10px;
+}
+p{
+    text-indent: 15px;
+}
+a.link::after{
+    content: ' 🔗';
+}
+a.link{
+    color: #1A5C37;
+    text-decoration: none;
+}
+a.link:hover{
+    color: #15472b;
+    font-weight: bold;
+}
+a.link:active{
+    color: #0a2415;
+}
+section#video{
+    text-align: center;
+    padding: 10px;
+    background-color: #1A5C37;
+}
+section#adicionais{
+    margin: 10px;
+}
+section#informacoes > article > h3, h2{
+    font-family: 'Android';
+    text-shadow: 0px 0px 10px #2fa86552;
+}
+h3.tituloaparte{
+    background-image: linear-gradient(to right, var(--color1)30%, white);
+    padding-left: 5px;
+    border-radius: 5px 0px 0px ;
+}
+section#adicionais > article{
+    background-color: #C5EBD6;
+    margin: 0px 20px;
+    border-radius: 10px;
+}
+section#adicionais > article > h3{
+    color: white;
+    background-color: #2FA866;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px;
+}
+section#adicionais > article > ul{
+    columns: 2;
+    margin: 8px;
+}
+section#adicionais > article > ul > li{
+    list-style-image: url(imagens/check.png);
+}
+section#adicionais > article > p{
+    padding: 7px;
+    margin: 0px;
+}
+
+/* * Rodapé do Site */
+footer{
+    background-color: var(--color6);
+    color: white;
+    font-family: 'Work Sans';
+    font-weight: 300;
+    text-align: center;
+    padding: 5px;
+}
+footer > p{
+    margin: 5px;
+}
