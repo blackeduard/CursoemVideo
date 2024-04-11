@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+:root{
+    --font00: Arial, Helvetica, sans-serif;
+    --font01: 'Passion One', cursive;
+    --font02: 'Sriracha', cursive;
+}
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Sriracha', cursive;
+    font-family: var(--font02);
 }
+body{
+    background-color: white;
+}
+/* Cabecalho */
 header{
     background-color: black;
     color: white;
@@ -11,18 +20,69 @@ header{
 }
 header > h1{
     padding-top: 50px;
-    font-family: 'Passion One', cursive;
+    font-family: var(--font01);
+    font-size: 4em;
+    font-variant: small-caps;
 }
 header > p{
     padding-bottom: 50px;
+    font-family: var(--font00);
 }
 header a{
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font00);
 }
 header a:hover{
     text-decoration: underline;
 }
 header a:active{
+    color: rgb(165, 165, 165);
+}
+/* Corpo do site */
+section.normal{
+    padding: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.imagem{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: rgb(175, 175, 175);
+}
+
+section.imagem p{
+    color: white;
+    text-shadow: 5px 1px 5px rgba(0, 0, 0, 0.459);
+    padding: 5px;
+    width: 400px;
+    min-width: 100px;
+    background-color: #00000083;
+}
+
+section#img_01{
+    background-image: url("img/cart.png");
+}
+section#img_02{
+    background-image: url("img/sunflowers.jpg");
+}
+
+/* Rodapé do site */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer a:active{
     color: rgb(165, 165, 165);
 }
