@@ -6,22 +6,43 @@
     <title>Meu primeiro programa em JS</title>
     <style>
         body{
+            background-image: url('img/cloud_modificated.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            background-position-y: -15vmax;
             background-color: rgb(60, 178, 218);
             color: white;
         }
-        div{
-            transform: translate(0, 50%);
+        div#pacote{
+            margin: auto;
+            transform: translate(0, 60%);
             padding: 10px;
             background-color: rgba(0, 0, 0, 0.10);
-            height: 500px;
+            height: 410px;
             width: 500px;
             border-radius: 15px;
             box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+        #pacote > #front > p{
+            text-align: center;
+        }
+        #pacote > #front > p > a{
+            color: rgb(76, 64, 209);
+            text-decoration: none;
+        }
+        #pacote > #front > p > a:hover{
+            color: rgb(102, 104, 238);
+            text-decoration: underline;
+        }
+        #btn{
+            padding: 25px;
         }
         h1{
             margin: 0;
             padding: 25px 0;
             text-align: center;
+            text-transform: uppercase;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         p{
@@ -31,14 +52,49 @@
             text-indent: 15px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        input{
+            width: 90%;
+            border-radius: 5px;
+            padding: 8px;
+            border: 1px solid grey;
+            margin: 5px 0 10px 15px;
+            transition: 1s;
+        }
+        input:focus-visible{
+            transition: 0.5s;
+            background-color: rgb(245, 245, 245);
+            border: 1px solid rgb(114, 114, 255);
+            outline: 4px solid rgba(148, 148, 255, 0.342);
+        }
+        button{
+            width: 100%;
+            border-radius: 5px;
+            border: 0;
+            padding: 10px;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: lightgrey;
+            transition: 0.4s;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Olá, mundo!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos totam aspernatur atque sed officiis consequuntur ratione ex harum amet, laborum quam ad rem doloremque voluptates id ipsum dicta, quibusdam corrupti!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos iusto dignissimos ipsum cupiditate aut itaque fugit maiores eaque laborum debitis? Illo perferendis illum nulla et ducimus quod deleniti odit incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit, laborum distinctio minus nam excepturi magnam nostrum adipisci sequi quas recusandae, numquam non possimus? Facilis in itaque dolor culpa sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit excepturi neque adipisci voluptatem quam delectus, assumenda, et tempora repudiandae reiciendis in repellat exercitationem asperiores nisi voluptates eaque sint architecto. Unde.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero maiores eaque debitis ab vel eveniet provident distinctio, sit in cupiditate voluptatem aut pariatur quae error iste ut nesciunt tempore neque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, porro quo maxime magnam modi dolorem laudantium provident quae harum iste? Ad laboriosam obcaecati sequi cum consectetur aut earum! Facere, voluptas!</p>
+    <div id="pacote">
+        <div class="side" id="front">
+            <h1>Registrar</h1>
+            <form action="">
+                <p>E-mail <br><input type="email" placeholder="email@seudominio.com" name="" id="" alt="Preencha esse campo"></p>
+                <p>Senha <br><input type="password" placeholder="Senha" id="" alt="Preencha esse campo"></p>
+                <p>Confirmar senha <br><input type="password" placeholder="Confirme sua senha" id="" alt="Preencha esse campo"></p>
+                <div id="btn"><button type="submit">Registrar</button></div>
+            </form>
+            <p>Já tem uma conta? Faça <a href="#">Login</a>.</p>
+        </div>
+        <div class="side" id="back">
+
+        </div>
     </div>
     <script>
         var nome = window.prompt('Qual é o seu nome?')
