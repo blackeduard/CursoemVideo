@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white; /* Comentário em CSS */
+            font: normal 20px Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+            text-align: center;
+        }
+        strong{
+            color: rgb(227, 166, 255);
+            text-decoration: underline;
+        }
+        p{
+            text-indent: 15px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: auto;
+            background-image: radial-gradient(red, black, purple);
+        }
+        div > div{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            border-radius: 50%;
+            transform: translate(0, 15%);
+            background-image: radial-gradient(red 30%, black, purple);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome')
+        document.write(`<h1>Bem vindo de volta <strong>${nome}</strong> !</h1>`)
+    </script>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolorum modi! Aperiam, facere tempora nihil praesentium repellendus aliquid laborum iure autem fugit eaque totam, atque nulla illum iusto perferendis itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, facere eos tenetur laudantium rem voluptatum itaque officia incidunt deleniti? Asperiores minima repudiandae quibusdam possimus sint ab aliquid labore ullam commodi. lorem</p>
+    <div>
+        <div>
+
+        </div>
+    </div>
+</body>
+</html>
