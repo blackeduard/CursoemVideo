@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando adições no JS</title>
+    <style>
+        body{
+            background-color: rgb(96, 96, 212);
+        }
+        h1{
+            color: yellow;
+            font-size: 3em;
+        }
+        p{
+            text-indent: 50px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+            String -> Número
+            Number(n)
+            parseInt(n)
+            parseFloat(n)
+
+            Número -> String
+            String(n)
+            n.toString()
+        
+            Formatar Strings
+            .length = tamanho string
+            .toLowerCase() = coloca as letras em minúsculas
+            .toUpperCase() = coloca as letras em maiúsculas
+
+            Formatar Números
+            n.toFixed(2) = Define número de casas decimais
+            n.replace('', '') = Troca reposiciona o que deseja ser mudado
+            n.toLocateString('pt-br', {style: 'currency', currency: 'BRL'})
+
+            Lógicos
+            ! - Negação
+            && - e
+            || - ou
+        */
+        var nome = prompt("Digite seu nome: ")
+        var n1 = Number(prompt("Digite o primeiro número: "))
+        var n2 = Number(prompt("Digite o segundo número: "))
+        var soma = n1 + n2
+        alert('Seu nome é '+ nome +', e os valores que você digitou sua soma deu '+ soma.toString()) //Com concatenação
+        alert(`Seu nome é ${nome}, e os valores que você digitou sua soma deu ${soma}`) //Com template string
+    </script>
+    <h1>Por enquanto nada...</h1>
+    <script>
+        document.write(`<p>Seu nome é <strong>${nome}</strong>, ele tem <strong>${nome.length}</strong> letras</p>`)
+        document.write(`<p>Seu nome em letras minúsculas é <strong>${nome.toLowerCase()}</strong> e em maiúsculas <strong>${nome.toUpperCase()}</strong></p>`)
+    </script>
+</body>
+</html>
