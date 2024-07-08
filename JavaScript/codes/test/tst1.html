@@ -45,17 +45,12 @@
             && - e
             || - ou
         */
-        var nome = prompt("Digite seu nome: ")
-        var n1 = Number(prompt("Digite o primeiro número: "))
-        var n2 = Number(prompt("Digite o segundo número: "))
-        var soma = n1 + n2
-        alert('Seu nome é '+ nome +', e os valores que você digitou sua soma deu '+ soma.toString()) //Com concatenação
-        alert(`Seu nome é ${nome}, e os valores que você digitou sua soma deu ${soma}`) //Com template string
     </script>
     <h1>Por enquanto nada...</h1>
-    <script>
-        document.write(`<p>Seu nome é <strong>${nome}</strong>, ele tem <strong>${nome.length}</strong> letras</p>`)
-        document.write(`<p>Seu nome em letras minúsculas é <strong>${nome.toLowerCase()}</strong> e em maiúsculas <strong>${nome.toUpperCase()}</strong></p>`)
-    </script>
+    <form action="">
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Enviar">
+      </form>
+    <script src="main.js"></script>
 </body>
 </html>
