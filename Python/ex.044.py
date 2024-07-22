@@ -12,7 +12,7 @@ elif op == 2:
 elif op == 3:
     print('Sua compra de R${:.2f} vai custar R${:.2f} as parcelas no final.'.format(val,val/2))
 elif op == 4:
-    des=str(input('Com ou sem juros? ')).lower()
+    des=str(input('Com ou sem juros? (use "com" ou "sem") ')).lower()
     if des == 'sem':
         par=int(input('Quantas parcelas? '))
         print('Sua compra será parcelada em {}x de R${:.2f} SEM JUROS'.format(par,val/par))
