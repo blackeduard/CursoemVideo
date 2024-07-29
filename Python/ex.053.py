@@ -1,7 +1,8 @@
-frase = input("Digite uma frase: ").lower().split()
+frase = input('Digite uma frase: ').upper().split()
 frase = "".join(frase)
-palindromo = frase[::-1]
-if frase == palindromo:
-    print("Essa frase se qualifica como um palindromo")
+inverso = frase[::-1]
+print('O inverso de "{}" é "{}"'.format(frase, inverso))
+if frase == inverso:
+    print('Essa frase se qualifica como um palíndromo!')
 else:
-    print("Essa frase não se qualifica como um palindromo")
+    print('Essa frase não se qualifica como um palíndromo.')

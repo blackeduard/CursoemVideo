@@ -4,23 +4,24 @@ fixo = 0
 for c in range(quant):
 
     # Valores solicitados NOME, IDADE e SEXO
-    nome = input('Digite o nome da {}° pessoa: '.format(c+1))
-    idade = int(input('Digite a idade da {}° pessoa: '.format(c+1)))
-    sexo = input('Digite o sexo da {}° pessoa("M" para masculino e "F" para feminino): '.format(c+1))
+    print("----- {}ª PESSOA -----".format(c+1))
+    nome = input('Nome: ')
+    idade = int(input('Idade: '))
+    sexo = input('Sexo [M/F]: ').upper()
 
     # Detectando o nome do homem mais velho
     if sexo == 'M':
         if fixo == 0:
-            fixo = 1
+            fixo += 1
             maior = idade
             registrado = nome
-    if idade > maior:
-        maior = idade
-        registrado = nome
+        if idade > maior:
+            maior = idade
+            registrado = nome
 
     # Detectar quantas mulheres têm menos de 20 anos
     if sexo == 'F' and idade < 20:
-        quantf = quantf + 1
+        quantf += 1
 
     # Calculando a média da idade do grupo
     if c == 0:

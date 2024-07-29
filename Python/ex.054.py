@@ -1,15 +1,14 @@
 from datetime import date
-ano_atual = date.today()
-ano_atual = ano_atual.year
+ano_atual = date.today().year
 maior = 0
 menor = 0
 pessoas = int(input('Digite o número de pessoas: '))
 for c in range(pessoas):
     ano = int(input('Digite o {}° ano de nascimento: '.format(c+1)))
     if (ano_atual - ano) >= 21:
-        maior = maior + 1
+        maior += 1
     else:
-        menor = menor + 1
+        menor += 1
 if maior == 1:
     print('{} pessoa possue a maioridade enquanto {} pessoas ainda não a possuem'.format(maior, menor))
 elif menor == 1:
