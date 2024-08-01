@@ -1,10 +1,9 @@
-n = ''
-par = impar = 0
-while n != 0:
-    n = int(input('Digite um valor: '))
-    if n != 0:
-        if n % 2 == 0:
-            par += 1
-        else:
-            impar += 1
-print('O número de números impares é igual a {} \nEnquanto o número de números pares é igual a {}'.format(impar, par))
+n = s = cont = 0
+while True:
+    n = int(input('Digite um número: '))
+    if n == 999:
+        break
+    s += n
+    cont += 1
+# print('A soma vale {}'.format(s))
+print(f'Você digitou {cont} números\nE a soma entre eles equivale a {s}')
